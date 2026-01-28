@@ -7,9 +7,11 @@
 data
 fasttext
 result
+__pycache__/
 website/node_modules/
 package-lock.json
 node_modules/
 models/
 *.egg-info/
 .idea/
+venv/
