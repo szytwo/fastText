@@ -4,7 +4,7 @@ chcp 65001 >nul
 set NSSM=C:\nssm\win64\nssm.exe
 set SERVICE_NAME=fasttext_server
 set PYTHON_EXE=E:\WebServer\fastText\venv\Scripts\python.exe
-set FASTTEXT_SERVER_CONF=-m uvicorn fasttext_server:app --host 127.0.0.1 --port 9231 --workers 2
+set FASTTEXT_SERVER_CONF=-m uvicorn fasttext_server:app --host 0.0.0.0 --port 9231 --workers 2
 
 echo [INFO] 安装服务 %SERVICE_NAME%...
 "%NSSM%" install "%SERVICE_NAME%" "%PYTHON_EXE%"

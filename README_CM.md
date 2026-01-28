@@ -17,7 +17,7 @@ pip uninstall numpy -y
 # 3️⃣ 安装兼容 fasttext 的 numpy 1.x
 pip install "numpy<2.0" -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-python -m uvicorn fasttext_server:app --host 127.0.0.1 --port 8000
+python -m uvicorn fasttext_server:app --host 0.0.0.0 --port 9231 --workers 2
 
 
 nvidia-smi -L  # 查看GUID
